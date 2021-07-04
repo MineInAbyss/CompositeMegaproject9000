@@ -1,8 +1,13 @@
 val includedProjects: String by project
 
-
-tasks.register("build") {
-    for (project in includedProjects.split(',')) {
-        dependsOn(gradle.includedBuild(project).task(":build"))
+fun taskFromChildren(taskName: String) {
+    tasks.register(taskName) {
+        for (project in includedProjects.split(',')) {
+            dependsOn(gradle.includedBuild(project).task(":$taskName"))
+        }
     }
+
 }
+
+taskFromChildren("build")
+taskFromChildren("clean")
