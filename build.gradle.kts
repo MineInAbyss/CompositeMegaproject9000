@@ -11,3 +11,4 @@ fun taskFromChildren(taskName: String) {
 
 taskFromChildren("build")
 taskFromChildren("clean")
+taskFromChildren("assemble")
