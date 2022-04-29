@@ -17,6 +17,7 @@ A master project that lets you easily work on several projects at once with Grad
 
 #### Build Specific Projects in IntelliJ:
 
-- To build a specific project, double tap control, type `gradle build` and select the project from the top right 
+- To build a specific project, double tap control, type `gradle build` and select the project from the top right
   dropdown that says `Project` by default.
-- After doing so, you'll se a configuration next to the green arrow in the top right. You may select one from the dropdown and run it with `Shift + F10`.
+- After doing so, you'll se a configuration next to the green arrow in the top right. You may select one from the
+  dropdown and run it with `Shift + F10`.
