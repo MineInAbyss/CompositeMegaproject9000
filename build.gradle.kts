@@ -1,4 +1,6 @@
-val includedProjects: String by project
+val includedProjects: String = file(".include")
+    .readLines()
+    .first()
 
 fun taskFromChildren(taskName: String) {
     tasks.register(taskName) {
@@ -6,7 +8,6 @@ fun taskFromChildren(taskName: String) {
             dependsOn(gradle.includedBuild(project).task(":$taskName"))
         }
     }
-
 }
 
 taskFromChildren("build")

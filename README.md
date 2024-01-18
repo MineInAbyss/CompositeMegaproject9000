@@ -1,6 +1,6 @@
-# CompositeMegaproject9000
+# Composite projects
 
-A master project that lets you easily work on several projects at once with Gradle's composite builds.
+This project allows one to include several other projects, defined by a comma spearated list in a `.include` file.
 
 ### Usage
 
@@ -11,8 +11,8 @@ A master project that lets you easily work on several projects at once with Grad
     ├───B
     └───C
     ```
-- Open CompositeMegaproject9000
-- Edit `gradle.properties` to include the names/paths of all your projects.
+- Open this project in your IDE
+- Create a `.include` file, add a comma separated project list, ex `A,B,C`
 - Run `gradle build` on the master project and all your subprojects should build together.
 
 #### Build Specific Projects in IntelliJ:
