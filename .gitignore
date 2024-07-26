@@ -12,3 +12,4 @@ eclipse
 *.ipr
 *.iws
 .include
+.kotlin
